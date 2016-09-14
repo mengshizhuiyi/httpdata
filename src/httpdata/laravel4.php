@@ -1,5 +1,6 @@
 <?php
 namespace http;
+use Illuminate\Support\Facades\Input;
 /**
  * http模块，数据接收输出
  * @author zxc@384808348@.com
