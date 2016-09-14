@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Input;
  * @author zxc@384808348@.com
  */
 
-class laravel4{
+class Laravel4{
 
 	public static function get($key, $default = '')
 	{

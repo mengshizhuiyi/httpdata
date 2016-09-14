@@ -5,14 +5,14 @@ namespace http;
  * @author zxc@384808348@.com
  */
 
-class http{
+class Http{
 	
-	private $http_class = 'protogenesis';
+	private $http_class = 'Protogenesis';
 	/**
 	 * 初始化框架配置，是使用某种框架进行的，目前支持laravel4以及原生的数据获取
 	 * 默认使用原生配置
 	 */
-	public function __construct($http_class = 'protogenesis')
+	public function __construct($http_class = 'Protogenesis')
 	{
 		$this->http_class = 'http\\' . $http_class;    
 	}
@@ -35,5 +35,12 @@ class http{
 		return $class::file($key, $default = '');
 	}
 	
+	/**
+	 * 静态魔术方法
+	 */
+	public static function __callstatic($method, $arg)
+	{
+		return call_user_func_array([$this, $method], $arg);
+	}
 }
 ?>

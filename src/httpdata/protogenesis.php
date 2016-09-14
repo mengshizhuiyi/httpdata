@@ -6,7 +6,7 @@ namespace http;
  * @author zxc@384808348@.com
  */
 
-class protogenesis{
+class Protogenesis{
 
 	public static function get($key, $default = '')
 	{
