@@ -40,7 +40,7 @@ class Http{
 	 */
 	public static function __callstatic($method, $arg)
 	{
-		return call_user_func_array([$this, $method], $arg);
+		return call_user_func_array([(new http\Http()), $method], $arg);
 	}
 }
 ?>
