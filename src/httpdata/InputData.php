@@ -1,13 +1,13 @@
 <?php
-namespace http;
+namespace Http;
 /**
  * http模块，数据接收输出
  * @author zxc@384808348@.com
  */
 
-class Http{
+class InputData{
 	
-	const HTTP_CLASS = 'http\Protogenesis';
+	const HTTP_CLASS = 'Http\Laravel4';
 	
 	/**
 	 * 获取http的数据
